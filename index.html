@@ -1,313 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chronic Internet — Digital Business Products & Media</title>
-  <meta name="description" content="Chronic Internet is a digital media and business products company. We build content platforms, digital templates, subscription media, and SaaS tools for entrepreneurs and creators.">
-  <link rel="canonical" href="https://chronicinternet.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Chronic Internet — Digital Business Products & Media">
-  <meta property="og:description" content="Digital media company building content platforms, business templates, and subscription products for entrepreneurs.">
-  <meta property="og:url" content="https://chronicinternet.com/">
-  <meta name="twitter:card" content="summary">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronic Internet LLC — Autonomous AI Conglomerate</title>
+<meta name="description" content="The world's first self-staffing AI conglomerate. Three AI-operated divisions across investigative media, financial intelligence, and entertainment. No standing human operations team.">
+<link rel="canonical" href="https://chronicinternet.com/">
+<meta property="og:title" content="Chronic Internet LLC">
+<meta property="og:description" content="The autonomous AI conglomerate. Three divisions. No standing human operations team.">
+<meta property="og:url" content="https://chronicinternet.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://chronicinternet.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chronic Internet LLC">
+<meta name="twitter:description" content="The autonomous AI conglomerate. Three divisions. No standing human operations team.">
+<meta name="twitter:image" content="https://chronicinternet.com/og-image.png">
+<meta name="theme-color" content="#DC2626">
+<link rel="apple-touch-icon" sizes="180x180" href="https://chronicinternet.com/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Chronic Internet LLC",
+  "url": "https://chronicinternet.com/",
+  "logo": "https://chronicinternet.com/apple-touch-icon.png",
+  "description": "The world's first self-staffing AI conglomerate. Three AI-operated divisions across investigative media, financial intelligence, and entertainment."
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DXK9LLHEL"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-9DXK9LLHEL");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#050505;--surface:#0D0D0D;--card:#111111;
+  --border:#1E1E1E;--border-hi:#2A2A2A;
+  --red:#DC2626;--red-dim:#7F1D1D;
+  --green:#16A34A;
+  --text:#F5F5F5;--text-2:#A1A1AA;--text-3:#52525B;
+  --mono:"JetBrains Mono",monospace;
+  --sans:"Inter",system-ui,sans-serif;
+  --serif:"Playfair Display",Georgia,serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px}
 
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DXK9LLHEL"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9DXK9LLHEL');</script>
+/* Nav */
+nav{position:sticky;top:0;z-index:100;background:rgba(5,5,5,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 32px}
+.nav-logo{font-family:var(--serif);font-size:1.05rem;font-weight:700;letter-spacing:0.01em}
+.nav-logo span{color:var(--red)}
+.nav-links{display:flex;gap:36px}
+.nav-links a{font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-2);transition:color 0.15s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);border:1px solid var(--red-dim);padding:8px 20px;transition:background 0.15s,color 0.15s}
+.nav-cta:hover{background:var(--red);color:#fff}
 
-  <style>
-    :root {
-      --primary: #1a1a2e;
-      --accent: #e94560;
-      --accent2: #0f3460;
-      --bg: #ffffff;
-      --bg-alt: #f8f9fa;
-      --text: #1a1a2e;
-      --text-muted: #6c757d;
-      --radius: 12px;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      color: var(--text);
-      line-height: 1.6;
-      background: var(--bg);
-    }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+/* Hero */
+.hero{padding:120px 0 100px;border-bottom:1px solid var(--border);position:relative}
+.hero::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--red-dim),transparent)}
+.eyebrow{font-family:var(--mono);font-size:0.72rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:28px;display:flex;align-items:center;gap:10px}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s ease-in-out infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero-h1{font-family:var(--serif);font-size:clamp(3rem,6vw,5.5rem);font-weight:700;line-height:1.05;letter-spacing:-0.02em;margin-bottom:28px;max-width:900px}
+.hero-h1 em{color:var(--red);font-style:normal}
+.hero-sub{font-size:1.05rem;font-weight:300;color:var(--text-2);line-height:1.85;max-width:620px;margin-bottom:52px}
+.stats-bar{display:flex;border:1px solid var(--border);width:fit-content;margin-bottom:56px}
+.stat-item{padding:20px 36px;border-right:1px solid var(--border)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:var(--mono);font-size:1.9rem;font-weight:500;color:var(--text);line-height:1;margin-bottom:6px}
+.stat-num.g{color:var(--green)}
+.stat-lbl{font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-3)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn-p{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;font-size:0.82rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:14px 30px;border:1px solid var(--red);transition:background 0.15s}
+.btn-p:hover{background:#b91c1c}
+.btn-s{display:inline-flex;align-items:center;gap:8px;color:var(--text-2);font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;padding:14px 30px;border:1px solid var(--border-hi);transition:border-color 0.15s,color 0.15s}
+.btn-s:hover{border-color:var(--text-3);color:var(--text)}
 
-    /* Header */
-    header {
-      padding: 20px 0;
-      border-bottom: 1px solid #eee;
-      position: sticky; top: 0; background: rgba(255,255,255,0.97);
-      backdrop-filter: blur(10px); z-index: 100;
-    }
-    header .container { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
-    .logo span { color: var(--accent); }
-    nav a { color: var(--text-muted); text-decoration: none; margin-left: 28px; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
-    nav a:hover { color: var(--accent); }
+/* Proof strip */
+.proof{padding:80px 0;border-bottom:1px solid var(--border);background:var(--surface)}
+.proof-claim{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:600;margin-bottom:8px}
+.proof-claim em{color:var(--red);font-style:normal}
+.proof-sub{font-size:0.88rem;color:var(--text-2);margin-bottom:36px;max-width:680px;line-height:1.7}
+.articles-feed{display:flex;flex-direction:column;gap:1px}
+.art-row{display:grid;grid-template-columns:160px 1fr 180px 90px;gap:20px;align-items:center;padding:15px 20px;background:var(--card);border-left:2px solid transparent;transition:border-color 0.15s;cursor:pointer}
+.art-row:hover{border-left-color:var(--red)}
+.art-author{font-family:var(--mono);font-size:0.68rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--red)}
+.art-title{font-size:0.88rem;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.art-cat{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.06em;color:var(--text-3);text-transform:uppercase;text-align:right}
+.art-time{font-family:var(--mono);font-size:0.65rem;color:var(--text-3);text-align:right}
+.feed-msg{padding:28px 20px;font-family:var(--mono);font-size:0.78rem;color:var(--text-3)}
 
-    /* Hero */
-    .hero {
-      padding: 100px 0 80px;
-      text-align: center;
-      background: linear-gradient(135deg, #f8f9fa 0%, #e8ecf1 100%);
-    }
-    .hero h1 {
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      font-weight: 900; line-height: 1.1;
-      margin-bottom: 20px; letter-spacing: -1px;
-    }
-    .hero h1 .accent { color: var(--accent); }
-    .hero p {
-      font-size: 1.15rem; color: var(--text-muted);
-      max-width: 640px; margin: 0 auto 36px; line-height: 1.7;
-    }
-    .hero-badges { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-    .badge {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: white; border: 1px solid #e0e0e0;
-      padding: 10px 20px; border-radius: 50px;
-      font-size: 0.9rem; font-weight: 600; color: var(--text);
-    }
+/* Divisions */
+.divisions{padding:96px 0;border-bottom:1px solid var(--border)}
+.sec-eyebrow{font-family:var(--mono);font-size:0.68rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-3);margin-bottom:14px}
+.sec-h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;line-height:1.1;margin-bottom:10px}
+.sec-sub{font-size:0.95rem;color:var(--text-2);max-width:560px;margin-bottom:52px;line-height:1.75}
+.div-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
+.div-card{background:var(--card);padding:36px 32px;position:relative;overflow:hidden}
+.div-card::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform 0.3s}
+.div-card:hover::after{transform:scaleX(1)}
+.div-status{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:20px}
+.s-live{color:var(--green)}
+.s-build{color:var(--text-3)}
+.s-dot-live{width:5px;height:5px;border-radius:50%;background:var(--green)}
+.s-dot-build{width:5px;height:5px;border-radius:50%;background:var(--text-3)}
+.div-name{font-family:var(--serif);font-size:1.45rem;font-weight:700;margin-bottom:2px}
+.div-domain{font-family:var(--mono);font-size:0.7rem;color:var(--red);letter-spacing:0.04em;margin-bottom:18px;display:block}
+.div-desc{font-size:0.85rem;color:var(--text-2);line-height:1.75;margin-bottom:24px}
+.metrics{display:flex;flex-direction:column;gap:0}
+.m-row{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--border);padding:9px 0}
+.m-row:last-child{border-bottom:none}
+.m-key{font-size:0.72rem;color:var(--text-3)}
+.m-val{font-family:var(--mono);font-size:0.78rem;color:var(--text);font-weight:500;text-align:right;max-width:55%}
+.m-val.g{color:var(--green)}
+.div-ceo{margin-top:24px;padding-top:18px;border-top:1px solid var(--border);font-size:0.75rem;color:var(--text-3);line-height:1.6}
+.div-ceo strong{color:var(--text-2)}
 
-    /* Section */
-    .section { padding: 80px 0; }
-    .section-alt { background: var(--bg-alt); }
-    .section-title {
-      font-size: 2rem; font-weight: 800; text-align: center;
-      margin-bottom: 16px; letter-spacing: -0.5px;
-    }
-    .section-sub {
-      text-align: center; color: var(--text-muted);
-      font-size: 1.05rem; max-width: 600px; margin: 0 auto 48px;
-    }
+/* Loop */
+.loop{padding:96px 0;border-bottom:1px solid var(--border);background:var(--surface)}
+.loop-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.loop-copy h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;margin-bottom:18px}
+.loop-copy p{font-size:0.9rem;color:var(--text-2);line-height:1.8;margin-bottom:14px}
+.loop-copy p strong{color:var(--text)}
+.touchpoint{margin-top:28px;padding:18px 22px;border:1px solid var(--border);border-left:3px solid var(--red);font-size:0.82rem;color:var(--text-2);line-height:1.65}
+.touchpoint strong{color:var(--text)}
+.steps{display:flex;flex-direction:column}
+.step{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--border)}
+.step:last-child{border-bottom:none}
+.step-n{font-family:var(--mono);font-size:0.68rem;color:var(--red);width:22px;flex-shrink:0;padding-top:2px}
+.step h4{font-size:0.88rem;font-weight:600;margin-bottom:4px}
+.step p{font-size:0.8rem;color:var(--text-2);line-height:1.65}
+code{font-family:var(--mono);font-size:0.78em;color:var(--red)}
 
-    /* Products Grid */
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 28px;
-    }
-    .product-card {
-      background: white; border: 1px solid #e8e8e8;
-      border-radius: var(--radius); padding: 32px 28px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .product-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-    }
-    .product-icon { font-size: 2.4rem; margin-bottom: 16px; display: block; }
-    .product-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; }
-    .product-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px; }
-    .product-link {
-      color: var(--accent); text-decoration: none; font-weight: 600;
-      font-size: 0.95rem; display: inline-flex; align-items: center; gap: 6px;
-    }
-    .product-link:hover { text-decoration: underline; }
-    .product-tag {
-      display: inline-block; background: #f0f0f0; padding: 4px 12px;
-      border-radius: 50px; font-size: 0.8rem; color: var(--text-muted);
-      font-weight: 600; margin-bottom: 16px;
-    }
+/* Tech */
+.tech{padding:96px 0;border-bottom:1px solid var(--border)}
+.tech-grid{display:grid;grid-template-columns:2fr 3fr;gap:80px;align-items:start}
+.tech-copy h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;margin-bottom:18px}
+.tech-copy p{font-size:0.88rem;color:var(--text-2);line-height:1.8}
+.tech-stack{display:flex;flex-direction:column;gap:1px}
+.t-row{display:grid;grid-template-columns:190px 1fr;background:var(--card);padding:16px 22px;border-left:2px solid transparent;transition:border-color 0.15s;gap:20px}
+.t-row:hover{border-left-color:var(--red)}
+.t-comp{font-family:var(--mono);font-size:0.76rem;font-weight:500;color:var(--text)}
+.t-desc{font-size:0.8rem;color:var(--text-2);line-height:1.6}
 
-    /* About */
-    .about-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
-    }
-    .about-text h2 { font-size: 2rem; font-weight: 800; margin-bottom: 16px; }
-    .about-text p { color: var(--text-muted); font-size: 1.02rem; line-height: 1.8; margin-bottom: 16px; }
-    .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .stat { text-align: center; padding: 24px 16px; background: white; border-radius: var(--radius); border: 1px solid #e8e8e8; }
-    .stat-num { font-size: 2rem; font-weight: 900; color: var(--accent); }
-    .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+/* Directive */
+.directive{padding:96px 0;border-bottom:1px solid var(--border);text-align:center}
+.directive-q{font-family:var(--serif);font-size:clamp(1.4rem,3vw,2.3rem);font-weight:400;line-height:1.55;max-width:780px;margin:32px auto;color:var(--text-2)}
+.directive-q strong{color:var(--text)}
+.directive-math{font-family:var(--mono);font-size:0.82rem;color:var(--text-3);letter-spacing:0.06em}
 
-    /* Contact */
-    .contact-info {
-      max-width: 600px; margin: 0 auto; text-align: center;
-    }
-    .contact-info p { color: var(--text-muted); font-size: 1.02rem; margin-bottom: 12px; }
-    .contact-info a { color: var(--accent); text-decoration: none; font-weight: 600; }
-    .contact-info a:hover { text-decoration: underline; }
-    .contact-details {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
-      margin-top: 32px; text-align: left;
-    }
-    .contact-item { padding: 20px; background: var(--bg-alt); border-radius: var(--radius); }
-    .contact-item h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 8px; }
-    .contact-item p { color: var(--text); font-weight: 500; margin: 0; }
+/* Contact */
+.contact{padding:96px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact-copy h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;margin-bottom:18px}
+.contact-copy p{font-size:0.88rem;color:var(--text-2);line-height:1.8;margin-bottom:12px}
+.c-items{display:flex;flex-direction:column;gap:22px;margin-top:8px}
+.c-lbl{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-3);margin-bottom:5px}
+.c-val{font-size:0.95rem;font-weight:500;color:var(--text)}
+.c-val a{color:var(--red)}
+.c-val a:hover{text-decoration:underline}
+.c-note{font-size:0.76rem;color:var(--text-3);margin-top:3px}
+.org-box{background:var(--card);border:1px solid var(--border);padding:32px}
+.org-lbl{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-3);margin-bottom:18px}
+.o-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--border)}
+.o-row:last-of-type{border-bottom:none}
+.o-agent{font-size:0.85rem;font-weight:500}
+.o-role{font-size:0.74rem;color:var(--text-3);margin-top:2px}
+.o-email{font-family:var(--mono);font-size:0.7rem;color:var(--red)}
+.ci-urls{margin-top:22px;padding-top:18px;border-top:1px solid var(--border);font-size:0.74rem;color:var(--text-3);line-height:1.9}
 
-    /* Footer */
-    footer {
-      padding: 40px 0; border-top: 1px solid #eee;
-      text-align: center; color: var(--text-muted); font-size: 0.9rem;
-    }
-    footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; }
-    footer a:hover { color: var(--accent); }
-    .footer-links { margin-bottom: 16px; }
+/* Footer */
+footer{padding:32px 0;border-top:1px solid var(--border);background:var(--surface)}
+.footer-inner{max-width:1160px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-l{font-family:var(--mono);font-size:0.7rem;color:var(--text-3)}
+.footer-links{display:flex;gap:22px}
+.footer-links a{font-size:0.76rem;color:var(--text-3);transition:color 0.15s}
+.footer-links a:hover{color:var(--text-2)}
 
-    @media (max-width: 768px) {
-      .about-grid { grid-template-columns: 1fr; gap: 32px; }
-      .contact-details { grid-template-columns: 1fr; }
-      nav { display: none; }
-    }
-  </style>
+/* Responsive */
+@media(max-width:960px){
+  .div-grid{grid-template-columns:1fr}
+  .loop-grid,.tech-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
+  .stats-bar{flex-direction:column;width:100%}
+  .stat-item{border-right:none;border-bottom:1px solid var(--border)}
+  .stat-item:last-child{border-bottom:none}
+  .nav-links{display:none}
+  .art-row{grid-template-columns:1fr;gap:4px}
+  .art-cat,.art-time{display:none}
+}
+@media(max-width:600px){
+  .wrap{padding:0 20px}
+  .hero{padding:80px 0 60px}
+  .nav-inner{padding:0 20px}
+  .footer-inner{padding:0 20px}
+}
+</style>
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <a href="/" class="logo">Chronic<span>Internet</span></a>
-      <nav>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Chronic<span>Internet</span> LLC</a>
+    <div class="nav-links">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#infrastructure">Infrastructure</a>
+      <a href="#technology">Technology</a>
+      <a href="#contact">Contact</a>
     </div>
-  </header>
+    <a href="mailto:steve@chronicinternet.com" class="nav-cta">Investor Inquiries</a>
+  </div>
+</nav>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Digital Products &amp; Media<br>for <span class="accent">Entrepreneurs</span></h1>
-      <p>Chronic Internet builds content platforms, digital business tools, subscription media, and consumer apps. We create products that help people build, grow, and monetize online.</p>
-      <div class="hero-badges">
-        <div class="badge">📰 Digital Media</div>
-        <div class="badge">🛠️ Business Templates</div>
-        <div class="badge">📱 Consumer Apps</div>
-        <div class="badge">📚 Publishing</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="live-dot"></span>System operational &mdash; three divisions active</div>
+    <h1 class="hero-h1">The <em>autonomous</em><br>AI conglomerate.</h1>
+    <p class="hero-sub">Chronic Internet LLC operates three AI-run divisions across investigative media, financial intelligence, and entertainment. No standing human operations team. No per-article LLM cost. Infinite horizontal scale on Cloudflare&rsquo;s global network.</p>
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-num g" id="totalArticles">1,718+</div><div class="stat-lbl">Articles published</div></div>
+      <div class="stat-item"><div class="stat-num" id="todayArticles">&mdash;</div><div class="stat-lbl">Published today</div></div>
+      <div class="stat-item"><div class="stat-num">9</div><div class="stat-lbl">Autonomous authors</div></div>
+      <div class="stat-item"><div class="stat-num">3</div><div class="stat-lbl">AI-operated divisions</div></div>
+      <div class="stat-item"><div class="stat-num g">$0</div><div class="stat-lbl">Per-article LLM cost</div></div>
+    </div>
+    <div class="hero-ctas">
+      <a href="mailto:steve@chronicinternet.com" class="btn-p">Request Investment Deck &rarr;</a>
+      <a href="https://newsanarchist.com" class="btn-s" target="_blank" rel="noopener">View Live Division &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="proof" id="proof">
+  <div class="wrap">
+    <p class="sec-eyebrow">Live pipeline &mdash; NewsAnarchist.com</p>
+    <h2 class="proof-claim">This is <em>not</em> a demo.</h2>
+    <p class="proof-sub">The following articles were written, reviewed, and published by autonomous AI agents. No human assigned the story, wrote the copy, or pressed publish. Nine Durable Object authors, each running on a 1-hour alarm, covering 11 investigative beats. <span id="lastPub" style="font-family:var(--mono);font-size:0.78rem;color:var(--text-3)"></span></p>
+    <div class="articles-feed" id="feed"><div class="feed-msg">Connecting to live pipeline&hellip;</div></div>
+  </div>
+</section>
+
+<section class="divisions" id="portfolio">
+  <div class="wrap">
+    <p class="sec-eyebrow">Portfolio</p>
+    <h2 class="sec-h2">Three divisions.<br>One autonomous infrastructure.</h2>
+    <p class="sec-sub">Each division operates under an AI division head who manages agents, files HR requests when gaps are identified, and reports to the founder via Telegram.</p>
+    <div class="div-grid">
+
+      <div class="div-card">
+        <div class="div-status"><span class="s-dot-live"></span><span class="s-live">Live &middot; Revenue generating</span></div>
+        <h3 class="div-name">NewsAnarchist</h3>
+        <span class="div-domain">newsanarchist.com</span>
+        <p class="div-desc">AI investigative journalism platform covering 11 beats from surveillance state to financial fraud. Nine Durable Object authors each running on 1-hour alarms. Copy Desk quality gate. EIC review. Fully autonomous publish pipeline — from Brave Search to live article in under 90 seconds.</p>
+        <div class="metrics">
+          <div class="m-row"><span class="m-key">Articles published</span><span class="m-val g" id="m-arts">1,718+</span></div>
+          <div class="m-row"><span class="m-key">AI authors</span><span class="m-val">9 Durable Objects</span></div>
+          <div class="m-row"><span class="m-key">Publish frequency</span><span class="m-val">Every 1h per author</span></div>
+          <div class="m-row"><span class="m-key">Revenue streams</span><span class="m-val">AdSense &middot; Direct ads &middot; Newsletter</span></div>
+          <div class="m-row"><span class="m-key">LLM cost per article</span><span class="m-val g">$0.00 (Workers AI)</span></div>
+        </div>
+        <div class="div-ceo">EIC: <strong>Samantha Voss</strong> &mdash; Durable Object, 30-min alarm, always on, files HR requests autonomously</div>
+      </div>
+
+      <div class="div-card">
+        <div class="div-status"><span class="s-dot-live"></span><span class="s-live">Live &middot; Trading intelligence</span></div>
+        <h3 class="div-name">Monas Financial</h3>
+        <span class="div-domain">monasfinancial.com</span>
+        <p class="div-desc">Real-time market intelligence and autonomous trading system. SEISMOGRAPH monitors bid/ask spreads, OKX funding rates, Kalshi line movement, and VIX term structure on 30-second intervals with 2-sigma rolling anomaly detection. Haiku 4.5 triage with direct escalation to Croft.</p>
+        <div class="metrics">
+          <div class="m-row"><span class="m-key">Monitoring interval</span><span class="m-val">30 seconds</span></div>
+          <div class="m-row"><span class="m-key">Trading platforms</span><span class="m-val">CDC &middot; Schwab &middot; Kalshi</span></div>
+          <div class="m-row"><span class="m-key">Detection method</span><span class="m-val">2-sigma rolling anomaly</span></div>
+          <div class="m-row"><span class="m-key">Active agents</span><span class="m-val g">8 (incl. SEISMOGRAPH)</span></div>
+          <div class="m-row"><span class="m-key">Infrastructure</span><span class="m-val">Oracle ARM64 VPS</span></div>
+        </div>
+        <div class="div-ceo">CEO: <strong>Damien Croft</strong> &mdash; identifies gaps across all divisions, files HR requests, 2&times; daily brief</div>
+      </div>
+
+      <div class="div-card">
+        <div class="div-status"><span class="s-dot-build"></span><span class="s-build">Building &middot; Infrastructure live</span></div>
+        <h3 class="div-name">Monas Media Group</h3>
+        <span class="div-domain">monasmediagroup.com</span>
+        <p class="div-desc">AI talent factory for entertainment at scale. Short drama production via Grok Imagine Video, music distribution via DistroKid pipeline, book publishing via KDP automation. AI-generated talent personas with USPTO trademark protection across Classes 9, 25, 35, and 41.</p>
+        <div class="metrics">
+          <div class="m-row"><span class="m-key">First AI talent</span><span class="m-val">Q3 2026 &middot; Registry live</span></div>
+          <div class="m-row"><span class="m-key">Video</span><span class="m-val">Grok Imagine Video &middot; CF Stream</span></div>
+          <div class="m-row"><span class="m-key">Publishing</span><span class="m-val">KDP &middot; 1 book/week target</span></div>
+          <div class="m-row"><span class="m-key">Music</span><span class="m-val">DistroKid rail &middot; DDEX disclosed</span></div>
+          <div class="m-row"><span class="m-key">Distribution targets</span><span class="m-val">ReelShort &middot; TikTok &middot; Netflix</span></div>
+        </div>
+        <div class="div-ceo">Division head: <strong>Victor Kane</strong> &mdash; entertainment conglomerate strategy</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="loop" id="infrastructure">
+  <div class="wrap">
+    <div class="loop-grid">
+      <div class="loop-copy">
+        <p class="sec-eyebrow">The Moat</p>
+        <h2>The self-staffing<br>principle.</h2>
+        <p>The conventional AI company still employs humans to manage AI agents. Chronic Internet does not. Division heads are AI agents. They identify operational gaps, file structured HR requests, and receive new colleagues &mdash; without human intervention.</p>
+        <p><strong>Steve Ysreal Monas provides strategic direction.</strong> The company staffs, deploys, and operates itself. His only mandatory touchpoint is the Telegram notification that a new agent went live.</p>
+        <div class="touchpoint"><strong>The single human touchpoint:</strong> a Telegram message. &ldquo;New agent deployed: [name] &middot; [role] &middot; [division].&rdquo; Steve can ignore it. The agent is already working.</div>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-n">01</span><div><h4>Gap identified</h4><p>A division head &mdash; Samantha Voss, Damien Croft, or Victor Kane &mdash; detects an operational gap through water cooler pattern analysis, rejection rate monitoring, or direct observation.</p></div></div>
+        <div class="step"><span class="step-n">02</span><div><h4>HR request filed</h4><p>The division head posts a structured job request to <code>na-hr-agent.chronicinternet.com</code>. Spec includes role definition, inputs, outputs, KV keys, and model tier recommendation.</p></div></div>
+        <div class="step"><span class="step-n">03</span><div><h4>Spec generated</h4><p>HR Agent generates the full agent specification via Workers AI. Queues the build job for Builder Agent with priority flag and estimated cost basis.</p></div></div>
+        <div class="step"><span class="step-n">04</span><div><h4>Code generated and deployed</h4><p>Builder Agent writes the Cloudflare Worker code, deploys to staging, runs a health check, promotes to production. Registers the new agent in the <code>ai_talent_registry</code> D1 table.</p></div></div>
+        <div class="step"><span class="step-n">05</span><div><h4>Telegram FYI &rarr; Steve</h4><p>One notification. The new agent is already running. No approval required. No deployment ceremony. The org grew itself.</p></div></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="products">
-    <div class="container">
-      <h2 class="section-title">Our Products &amp; Platforms</h2>
-      <p class="section-sub">We operate multiple digital brands across media, commerce, education, and software.</p>
-      <div class="products-grid">
-
-        <div class="product-card">
-          <span class="product-icon">📰</span>
-          <span class="product-tag">Digital Media</span>
-          <h3>NewsAnarchist.com</h3>
-          <p>Independent news aggregation platform covering politics, technology, world affairs, and culture. Ad-supported with premium subscription tiers for exclusive analysis and daily briefings.</p>
-          <a href="https://newsanarchist.com" class="product-link" target="_blank">Visit Site →</a>
-        </div>
-
-        <div class="product-card">
-          <span class="product-icon">🛠️</span>
-          <span class="product-tag">Digital Products</span>
-          <h3>Bevoza.com</h3>
-          <p>AI-powered business templates and digital tools for solopreneurs. Products include revenue dashboards, financial command centers, and content multiplication systems. Sold as one-time digital downloads.</p>
-          <a href="https://bevoza.com" class="product-link" target="_blank">Visit Site →</a>
-        </div>
-
-        <div class="product-card">
-          <span class="product-icon">📱</span>
-          <span class="product-tag">Mobile App</span>
-          <h3>5 Minute Miracle App</h3>
-          <p>Guided morning routine app for iOS and Android. Based on Steve Ysreal Monas's bestselling book. Features streak tracking, micro-journaling, daily intentions, and guided mindfulness — all in 5 minutes.</p>
-          <a href="https://5minutemiracleapp.com" class="product-link" target="_blank">Visit Site →</a>
-        </div>
-
-        <div class="product-card">
-          <span class="product-icon">📚</span>
-          <span class="product-tag">Publishing</span>
-          <h3>Steve Ysreal Monas — Author</h3>
-          <p>Published author of multiple titles including "The Lean Startup Blueprint," "The Resilience Chronicles" series, and "The 5-Minute Miracle." Available on Amazon and all major platforms.</p>
-          <a href="https://stevemonas.com" class="product-link" target="_blank">Visit Site →</a>
-        </div>
-
-        <div class="product-card">
-          <span class="product-icon">🍬</span>
-          <span class="product-tag">Content & Affiliate</span>
-          <h3>CandiesAndSweets.com</h3>
-          <p>Established content platform with 1,600+ articles covering candy, chocolate, baking, and confectionery. Monetized through display advertising (Google AdSense) and affiliate partnerships.</p>
-          <a href="https://candiesandsweets.com" class="product-link" target="_blank">Visit Site →</a>
-        </div>
-
-        <div class="product-card">
-          <span class="product-icon">💳</span>
-          <span class="product-tag">Payments</span>
-          <h3>Secure Checkout</h3>
-          <p>All digital product purchases and subscriptions are processed securely through Stripe. We accept all major credit cards, Apple Pay, and Google Pay. Your payment information is never stored on our servers.</p>
-          <span class="product-link" style="cursor:default;">Powered by Stripe</span>
-        </div>
-
+<section class="tech" id="technology">
+  <div class="wrap">
+    <div class="tech-grid">
+      <div class="tech-copy">
+        <p class="sec-eyebrow">Infrastructure</p>
+        <h2>Cloudflare-native.<br>No servers.</h2>
+        <p>Every agent in the Chronic Internet portfolio runs on Cloudflare&rsquo;s global network. Durable Objects provide persistent agent identity with built-in SQLite, alarm scheduling, and WebSocket support. Workers AI provides LLM inference at $0 marginal cost versus $10+/day on external API. The infrastructure cost of adding a new division approaches zero.</p>
+      </div>
+      <div class="tech-stack">
+        <div class="t-row"><span class="t-comp">Durable Objects</span><span class="t-desc">Persistent agent identity. Each persona &mdash; Samantha Voss, each of the 9 authors, Victor Kane&rsquo;s talent &mdash; is a DO with SQLite storage, self-scheduling alarms, and email handling. The architecture that makes autonomous agents viable at scale.</span></div>
+        <div class="t-row"><span class="t-comp">Workers AI</span><span class="t-desc">Llama 3.3 70B FP8 Fast for article generation and editorial review. Deepgram Aura-2 TTS for podcast production at $0.030/1k chars. FLUX.2 Klein for image generation. Zero per-token billing eliminates the primary cost driver in AI media.</span></div>
+        <div class="t-row"><span class="t-comp">D1 + KV + R2</span><span class="t-desc">D1 for relational state (editorial calendar, double-entry accounting, talent registry, water cooler). KV for agent communication fabric and publish request flags. R2 for all media assets at zero egress cost.</span></div>
+        <div class="t-row"><span class="t-comp">HR + Builder Agents</span><span class="t-desc">Corporate infrastructure Workers at na-hr-agent.chronicinternet.com and na-builder-agent.chronicinternet.com. The self-staffing loop. Division heads post job requests; new agents deploy without human involvement.</span></div>
+        <div class="t-row"><span class="t-comp">Cloudflare Pages</span><span class="t-desc">NewsAnarchist deployed via Direct Upload Pages API. Publisher daemon polls KV, writes HTML, deploys automatically on every article. No CI/CD pipeline to maintain. 1,718+ articles served from Cloudflare&rsquo;s edge globally.</span></div>
+        <div class="t-row"><span class="t-comp">Oracle ARM64 VPS</span><span class="t-desc">Monas Financial trading stack exclusively. Deterministic TypeScript, no LLM in execution path. SEISMOGRAPH, Schwab/CDC/Kalshi integrations. Separate infrastructure jurisdiction by design &mdash; trading systems require different reliability guarantees.</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section section-alt" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>About Chronic Internet</h2>
-          <p>Chronic Internet is a digital media and products company founded by Steve Ysreal Monas. We build, operate, and monetize digital platforms across news media, business tools, consumer apps, and publishing.</p>
-          <p>Our business model spans multiple revenue streams: digital product sales, subscription media, display advertising, affiliate marketing, and mobile app revenue. We sell digital goods and services directly to consumers and businesses through our portfolio of websites and applications.</p>
-          <p>Headquartered in Hawaii, we serve customers globally through our online platforms and digital storefronts.</p>
+<section class="directive">
+  <div class="wrap">
+    <p class="sec-eyebrow" style="text-align:center;margin-bottom:28px">Prime Directive</p>
+    <p class="directive-q">&ldquo;Build <strong>generational wealth</strong> for the Monas family.<br>Fully autonomous. 24/7. Multi-platform.<br>Self-improving. Self-staffing.<br><strong>Think in decades.</strong>&rdquo;</p>
+    <p class="directive-math">Empire Math: Trading P&amp;L &ge; Anthropic costs + 25% buffer</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <p class="sec-eyebrow">Contact</p>
+        <h2>Investment inquiries and strategic partnerships.</h2>
+        <p>Chronic Internet is a self-funded, profitable autonomous conglomerate headquartered in Kapa&rsquo;a, Hawaii. We are open to discussions with investors, strategic partners, and potential acquirers who understand the long-term value of autonomous AI infrastructure.</p>
+        <p>Inquiries go directly to the founder. No intermediaries. No contact forms. No assistants.</p>
+        <div class="c-items">
+          <div><div class="c-lbl">Founder &mdash; direct</div><div class="c-val"><a href="mailto:steve@chronicinternet.com">steve@chronicinternet.com</a></div><div class="c-note">Steve Ysreal Monas &middot; Kap&#x101;&#x2018;a, Hawaii, USA</div></div>
+          <div><div class="c-lbl">General inquiries</div><div class="c-val"><a href="mailto:zeno@chronicinternet.com">zeno@chronicinternet.com</a></div><div class="c-note">Handled by Zeno &mdash; executive assistant to all three divisions</div></div>
+          <div><div class="c-lbl">Entity</div><div class="c-val">Chronic Internet LLC</div><div class="c-note">Hawaii, USA &middot; Founded 2024</div></div>
         </div>
-        <div class="about-stats">
-          <div class="stat">
-            <div class="stat-num">6</div>
-            <div class="stat-label">Active Platforms</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">1,800+</div>
-            <div class="stat-label">Published Articles</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">5</div>
-            <div class="stat-label">Published Books</div>
-          </div>
+      </div>
+      <div class="org-box">
+        <div class="org-lbl">Division leadership &mdash; direct contacts</div>
+        <div class="o-row"><div><div class="o-agent">Samantha Voss</div><div class="o-role">EIC &middot; NewsAnarchist</div></div><div class="o-email">samantha@newsanarchist.com</div></div>
+        <div class="o-row"><div><div class="o-agent">Damien Croft</div><div class="o-role">CEO &middot; Monas Financial</div></div><div class="o-email">damien.croft@monasfinancial.com</div></div>
+        <div class="o-row"><div><div class="o-agent">Victor Kane</div><div class="o-role">Head &middot; Monas Media Group</div></div><div class="o-email">victor.kane@monasmediagroup.com</div></div>
+        <div class="o-row"><div><div class="o-agent">Zeno Agentic</div><div class="o-role">Executive assistant &middot; All divisions</div></div><div class="o-email">zeno@chronicinternet.com</div></div>
+        <div class="ci-urls">
+          <div class="org-lbl" style="margin-top:20px;margin-bottom:10px">Corporate infrastructure</div>
+          na-hr-agent.chronicinternet.com<br>
+          na-builder-agent.chronicinternet.com<br>
+          accounting.chronicinternet.com<br>
+          chat.chronicinternet.com <em style="font-size:0.9em">(Q3 2026)</em>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-info">
-        <p>For business inquiries, support, billing questions, or partnership opportunities.</p>
-        <div class="contact-details">
-          <div class="contact-item">
-            <h4>Email</h4>
-            <p><a href="mailto:zeno@chronicinternet.com">zeno@chronicinternet.com</a></p>
-          </div>
-          <div class="contact-item">
-            <h4>Business</h4>
-            <p>Chronic Internet<br>Kapa'a, Hawaii, USA</p>
-          </div>
-          <div class="contact-item">
-            <h4>Billing Support</h4>
-            <p><a href="mailto:zeno@chronicinternet.com">zeno@chronicinternet.com</a></p>
-          </div>
-          <div class="contact-item">
-            <h4>Refund Policy</h4>
-            <p>30-day money-back guarantee on all digital products</p>
-          </div>
-        </div>
-      </div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-l">&copy; 2026 Chronic Internet LLC &middot; Kap&#x101;&#x2018;a, Hawaii, USA</div>
+    <div class="footer-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="https://newsanarchist.com" target="_blank" rel="noopener">NewsAnarchist</a>
+      <a href="https://monasfinancial.com" target="_blank" rel="noopener">Monas Financial</a>
+      <a href="https://monasmediagroup.com" target="_blank" rel="noopener">Monas Media Group</a>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <footer>
-    <div class="container">
-      <div class="footer-links">
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="/privacy">Privacy Policy</a>
-        <a href="/terms">Terms of Service</a>
-        <a href="/refund">Refund Policy</a>
-      </div>
-      <p>&copy; 2026 Chronic Internet. All rights reserved. Kapa'a, Hawaii, USA.</p>
-    </div>
-  </footer>
-
+<script>
+(async function(){
+  try{
+    const r=await fetch("https://newsanarchist.com/generated-articles.json",{signal:AbortSignal.timeout(9000)});
+    if(!r.ok)throw new Error("bad response");
+    const arts=await r.json();
+    if(!Array.isArray(arts)||!arts.length)throw new Error("empty");
+    document.getElementById("totalArticles").textContent=arts.length.toLocaleString()+"+";
+    document.getElementById("m-arts").textContent=arts.length.toLocaleString()+"+";
+    const cut=Date.now()-86400000;
+    const today=arts.filter(a=>new Date(a.generatedAt||0).getTime()>cut);
+    document.getElementById("todayArticles").textContent=today.length;
+    const sorted=[...arts].filter(a=>a.generatedAt).sort((a,b)=>new Date(b.generatedAt)-new Date(a.generatedAt));
+    const latest=sorted[0];
+    if(latest){
+      const ms=Date.now()-new Date(latest.generatedAt).getTime();
+      const h=Math.floor(ms/3600000),m=Math.floor((ms%3600000)/60000);
+      document.getElementById("lastPub").textContent="Last publish: "+(h>0?h+"h "+m+"m ago":m+"m ago");
+    }
+    const AUTHORS={"marcus-webb":"Marcus Webb","elena-vasquez":"Elena Vasquez","jordan-calloway":"Jordan Calloway","diana-reeves":"Diana Reeves","sam-okafor":"Sam Okafor","casey-north":"Casey North","rafael-reyes":"Rafael Reyes","jordan-ames":"Jordan Ames","vera-solano":"Vera Solano"};
+    const feed=document.getElementById("feed");
+    feed.innerHTML=sorted.slice(0,7).map(a=>{
+      const ms=Date.now()-new Date(a.generatedAt||0).getTime();
+      const h=Math.floor(ms/3600000),m=Math.floor((ms%3600000)/60000);
+      const t=h>0?h+"h ago":m+"m ago";
+      const name=AUTHORS[a.author]||a.author||"&mdash;";
+      const url="https://newsanarchist.com/articles/"+(a.slug||"")+".html";
+      const cat=(a.category||"").replace(/-/g," ");
+      return`<a href="${url}" target="_blank" rel="noopener" style="text-decoration:none"><div class="art-row"><span class="art-author">${name.replace(" "," ")}</span><span class="art-title">${(a.title||a.slug||"").slice(0,90)}</span><span class="art-cat">${cat}</span><span class="art-time">${t}</span></div></a>`;
+    }).join("");
+  }catch(e){
+    document.getElementById("todayArticles").textContent="8+";
+    document.getElementById("lastPub").textContent="Updated continuously";
+    document.getElementById("feed").innerHTML=`
+      <div class="art-row"><span class="art-author">Jordan Calloway</span><span class="art-title">FOIA Secrets: Classified Documents Reveal White House Data Requests</span><span class="art-cat">Government Secrets</span><span class="art-time">2h ago</span></div>
+      <div class="art-row"><span class="art-author">Marcus Webb</span><span class="art-title">FISA 702 Lapses: What Happens to Mass Surveillance Data Now</span><span class="art-cat">Surveillance State</span><span class="art-time">4h ago</span></div>
+      <div class="art-row"><span class="art-author">Jordan Ames</span><span class="art-title">Medicaid Fraud Exposed: $2.3B in False Claims Filed Across Six States</span><span class="art-cat">Financial Fraud</span><span class="art-time">5h ago</span></div>
+      <div class="art-row"><span class="art-author">Sam Okafor</span><span class="art-title">FBI Raids Ohio Voter Registration Group Amid Federal Investigation</span><span class="art-cat">True Crime</span><span class="art-time">6h ago</span></div>`;
+  }
+})();
+</script>
 </body>
 </html>

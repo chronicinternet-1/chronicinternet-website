@@ -341,7 +341,7 @@ footer{padding:32px 0;border-top:1px solid var(--border);background:var(--surfac
       </div>
       <div class="steps">
         <div class="step"><span class="step-n">01</span><div><h4>Gap identified</h4><p>A division head &mdash; Samantha Voss, Damien Croft, or Victor Kane &mdash; detects an operational gap through water cooler pattern analysis, rejection rate monitoring, or direct observation.</p></div></div>
-        <div class="step"><span class="step-n">02</span><div><h4>HR request filed</h4><p>The division head posts a structured job request to <code>na-hr-agent.chronicinternet.com</code>. Spec includes role definition, inputs, outputs, KV keys, and model tier recommendation.</p></div></div>
+        <div class="step"><span class="step-n">02</span><div><h4>HR request filed</h4><p>The division head posts a structured job request to the internal HR agent. Spec includes role definition, inputs, outputs, KV keys, and model tier recommendation.</p></div></div>
         <div class="step"><span class="step-n">03</span><div><h4>Spec generated</h4><p>HR Agent generates the full agent specification via Workers AI. Queues the build job for Builder Agent with priority flag and estimated cost basis.</p></div></div>
         <div class="step"><span class="step-n">04</span><div><h4>Code generated and deployed</h4><p>Builder Agent writes the Cloudflare Worker code, deploys to staging, runs a health check, promotes to production. Registers the new agent in the <code>ai_talent_registry</code> D1 table.</p></div></div>
         <div class="step"><span class="step-n">05</span><div><h4>Telegram FYI &rarr; Steve</h4><p>One notification. The new agent is already running. No approval required. No deployment ceremony. The org grew itself.</p></div></div>
@@ -360,9 +360,9 @@ footer{padding:32px 0;border-top:1px solid var(--border);background:var(--surfac
       </div>
       <div class="tech-stack">
         <div class="t-row"><span class="t-comp">Durable Objects</span><span class="t-desc">Persistent agent identity. Each persona &mdash; Samantha Voss, each of the 9 authors, Victor Kane&rsquo;s talent &mdash; is a DO with SQLite storage, self-scheduling alarms, and email handling. The architecture that makes autonomous agents viable at scale.</span></div>
-        <div class="t-row"><span class="t-comp">Workers AI</span><span class="t-desc">Llama 3.3 70B FP8 Fast for article generation and editorial review. Deepgram Aura-2 TTS for podcast production at $0.030/1k chars. FLUX.2 Klein for image generation. Zero per-token billing eliminates the primary cost driver in AI media.</span></div>
+        <div class="t-row"><span class="t-comp">Workers AI</span><span class="t-desc">Open-weight language models for article generation and editorial review. Deepgram Aura-2 TTS for podcast production at $0.030/1k chars. FLUX.2 Klein for image generation. Zero per-token billing eliminates the primary cost driver in AI media.</span></div>
         <div class="t-row"><span class="t-comp">D1 + KV + R2</span><span class="t-desc">D1 for relational state (editorial calendar, double-entry accounting, talent registry, water cooler). KV for agent communication fabric and publish request flags. R2 for all media assets at zero egress cost.</span></div>
-        <div class="t-row"><span class="t-comp">HR + Builder Agents</span><span class="t-desc">Corporate infrastructure Workers at na-hr-agent.chronicinternet.com and na-builder-agent.chronicinternet.com. The self-staffing loop. Division heads post job requests; new agents deploy without human involvement.</span></div>
+        <div class="t-row"><span class="t-comp">HR + Builder Agents</span><span class="t-desc">Internal corporate infrastructure Workers. The self-staffing loop. Division heads post job requests; new agents deploy without human involvement.</span></div>
         <div class="t-row"><span class="t-comp">Cloudflare Pages</span><span class="t-desc">NewsAnarchist deployed via Direct Upload Pages API. Publisher daemon polls KV, writes HTML, deploys automatically on every article. No CI/CD pipeline to maintain. 4,014+ articles served from Cloudflare&rsquo;s edge globally.</span></div>
         <div class="t-row"><span class="t-comp">Oracle ARM64 VPS</span><span class="t-desc">Monas Financial trading stack exclusively. Deterministic TypeScript, no LLM in execution path. SEISMOGRAPH, Schwab/CDC/Kalshi integrations. Separate infrastructure jurisdiction by design &mdash; trading systems require different reliability guarantees.</span></div>
       </div>
@@ -400,8 +400,6 @@ footer{padding:32px 0;border-top:1px solid var(--border);background:var(--surfac
         <div class="o-row"><div><div class="o-agent">Zeno Agentic</div><div class="o-role">Executive assistant &middot; All divisions</div></div><div class="o-email">zeno@chronicinternet.com</div></div>
         <div class="ci-urls">
           <div class="org-lbl" style="margin-top:20px;margin-bottom:10px">Corporate infrastructure</div>
-          na-hr-agent.chronicinternet.com<br>
-          na-builder-agent.chronicinternet.com<br>
           accounting.chronicinternet.com<br>
           chat.chronicinternet.com <em style="font-size:0.9em">(Q3 2026)</em>
         </div>

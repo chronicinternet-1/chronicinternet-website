@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etsy OAuth Callback — Chronic Internet LLC</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0a0a;color:#e8e8e8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;line-height:1.6;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:1.5rem}
+.box{background:#121212;border:1px solid #242424;border-top:3px solid #DC2626;border-radius:14px;max-width:640px;width:100%;padding:2rem}
+h1{font-family:Georgia,serif;font-size:1.5rem;margin-bottom:.4rem}
+.sub{color:#888;font-size:.85rem;margin-bottom:1.4rem}
+.label{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#888;margin-bottom:.4rem}
+.code{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:1rem;background:#0a0a0a;border:1px solid #2a2a2a;border-radius:9px;padding:.9rem 1rem;word-break:break-all;color:#22c55e;user-select:all}
+.row{margin:1.1rem 0}
+button{background:#DC2626;border:none;color:#fff;border-radius:8px;padding:.6rem 1.1rem;font-size:.85rem;cursor:pointer;font-weight:600}
+button:hover{background:#b91c1c}
+.ok{color:#22c55e;font-size:.8rem;margin-left:.6rem;opacity:0;transition:opacity .2s}
+.ok.show{opacity:1}
+.err{color:#ef4444}
+.note{font-size:.78rem;color:#888;margin-top:1.4rem;border-top:1px solid #1c1c1c;padding-top:1rem}
+.note code{color:#cbd5e1;font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>Etsy OAuth Callback</h1>
+  <div class="sub">Chronic Internet LLC — paste the code below into your terminal.</div>
+  <div id="content">
+    <div class="row">
+      <div class="label">Your Etsy authorization code</div>
+      <div class="code" id="code">…</div>
+    </div>
+    <div class="row">
+      <div class="label">State</div>
+      <div class="code" id="state" style="color:#9aa">…</div>
+    </div>
+    <button id="copy">Copy code</button><span class="ok" id="ok">copied ✓</span>
+  </div>
+  <div class="note">
+    Next: run your Etsy token exchange with this <code>code</code> (codes expire fast — use it within a few minutes). This page does not store the code; it only reads it from the URL in your browser.
+  </div>
+</div>
+<script>
+(function(){
+  var q = new URLSearchParams(location.search);
+  var code = q.get('code'), state = q.get('state'), err = q.get('error');
+  var codeEl = document.getElementById('code'), stateEl = document.getElementById('state');
+  if (err) {
+    codeEl.textContent = 'ERROR: ' + err + (q.get('error_description') ? ' — ' + q.get('error_description') : '');
+    codeEl.className = 'code err';
+  } else if (code) {
+    codeEl.textContent = code;
+    stateEl.textContent = state || '(none)';
+  } else {
+    codeEl.textContent = 'No ?code in the URL. Start the OAuth flow from Etsy, then you will be redirected back here with the code.';
+    codeEl.className = 'code err';
+  }
+  document.getElementById('copy').addEventListener('click', function(){
+    if (!code) return;
+    navigator.clipboard.writeText(code).then(function(){
+      var ok = document.getElementById('ok'); ok.classList.add('show'); setTimeout(function(){ok.classList.remove('show');}, 1800);
+    });
+  });
+})();
+</script>
+</body>
+</html>
